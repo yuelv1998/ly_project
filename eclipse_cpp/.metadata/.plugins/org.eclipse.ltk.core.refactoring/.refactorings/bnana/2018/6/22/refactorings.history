@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;bnana/src/common/bnanatype.h&apos; to &apos;Globaltype.h&apos;" description="Rename resource &apos;bnanatype.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/common/bnanatype.h" name="Globaltype.h" stamp="1527923530817" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;bnana/src/common/Globaltype.h&apos; to &apos;GlobalType.h&apos;" description="Rename resource &apos;Globaltype.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/common/Globaltype.h" name="GlobalType.h" stamp="1527923558274" updateReferences="true"/>
+</session>

@@ -1,0 +1,113 @@
+//============================================================================
+// Name        : lvyue3.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<algorithm>
+#include<map>
+#include<iterator>
+#include<string>
+#include <vector>
+#include<bitset>
+using namespace std;
+/*
+void fun(int &a)
+{
+   a = a * a;
+}
+*/
+
+/**
+ * merger(arr, lo, mid, hi)
+ *
+ * */
+int min(int a , int b)
+{
+   return a < b ? a:b;
+}
+/*
+void merge(int *a, int lo, int mid, int hi)
+{
+     int i = lo;
+     int j = mid+1;
+     //int aux[hi-lo+1]={0};
+     for(int k = lo; k <=hi; k++)
+     {
+    	 aux[k] = a[k];
+     }
+
+     for (int k=lo; k<=hi; k++)
+     {
+    	 //这个思想，用i超过界限 标识右边还有剩余，我们习惯的思维是
+    	 if (i > mid)
+    	 {
+    		 a[k] = aux[j++];
+    	 }
+    	 else if(j > hi)
+    	 {
+    		 a[k] = aux[i++];
+    	 }
+    	 else if (aux[j] < aux[i])
+    	 {
+    		 a[k] = aux[j++];
+    	 }
+    	 else
+    	 {
+    		 a[k] = aux[i++];
+    	 }
+
+     }
+}
+*/
+void sort_gui1(int *arr, int length)
+{
+    int arr_bk[length];
+
+    for(int between = 1; between < length; between = between + between)//数组的大小
+    {
+        for(int lo= 0; lo < length-between; lo = lo+between*2)//子数组的第一个
+        {
+           // merge(lo, lo+between-1; min(lo+2*between-1, length-1));
+        }
+    }
+}
+int main() {
+
+
+	/*
+    enum color{red, blue, yellow, write, end};
+    bitset<end> colors;
+    colors.set(red);
+    colors.set(blue);
+    cout << colors<<endl;
+    cout << colors.count() <<endl;
+    cout << ~colors <<endl;
+    */
+	/*
+	vector<int>  vec;
+	for(int i = 0; i < 9; i++)
+	{
+		vec.push_back(i);
+	}
+
+	for_each(vec.begin(), vec.end(), fun);
+	copy( vec.begin(), vec.end(), ostream_iterator<int>(cout, " "));
+    */
+
+
+	/*
+	map<int , string> map1;
+    map1[1] = "lvyue1";
+    map1[2] = "jiemian";
+    map<int, string>::reverse_iterator iter = map1.rbegin();
+    cout << iter->second <<endl;
+    map<int, string>::mapped_type a = map1[1];
+    cout << a << endl;
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	*/
+	return 0;
+}

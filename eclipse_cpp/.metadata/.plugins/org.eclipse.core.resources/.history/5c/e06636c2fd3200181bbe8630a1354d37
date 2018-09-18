@@ -1,0 +1,42 @@
+//============================================================================
+// Name        : lvyue3.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<algorithm>
+#include<map>
+#include<iterator>
+#include<string>
+using namespace std;
+void fun(int &a)
+{
+   a = a * a;
+}
+
+int main() {
+	vector<int>  vec;
+	for(int i = 0; i < 9; i++)
+	{
+		vec.push_back(i);
+	}
+
+	for_each(vec.begin(), vec.end(), fun);
+
+
+
+	/*
+	map<int , string> map1;
+    map1[1] = "lvyue1";
+    map1[2] = "jiemian";
+    map<int, string>::reverse_iterator iter = map1.rbegin();
+    cout << iter->second <<endl;
+    map<int, string>::mapped_type a = map1[1];
+    cout << a << endl;
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	*/
+	return 0;
+}

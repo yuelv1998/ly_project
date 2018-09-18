@@ -1,0 +1,24 @@
+16:45:48 **** Incremental Build of configuration Debug for project lvyue ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o hello.o "..\\hello.cpp" 
+..\hello.cpp: In function 'int main()':
+..\hello.cpp:12:2: error: 'cout' was not declared in this scope
+  cout << "lvyue" <<endl;
+  ^
+..\hello.cpp:12:2: note: suggested alternative:
+In file included from ..\hello.cpp:8:0:
+C:/Program Files/mingw-w64/x86_64-5.4.0-posix-seh-rt_v5-rev0/mingw64/x86_64-w64-mingw32/include/c++/iostream:61:18: note:   'std::cout'
+   extern ostream cout;  /// Linked to standard output
+                  ^
+..\hello.cpp:12:20: error: 'endl' was not declared in this scope
+  cout << "lvyue" <<endl;
+                    ^
+..\hello.cpp:12:20: note: suggested alternative:
+In file included from C:/Program Files/mingw-w64/x86_64-5.4.0-posix-seh-rt_v5-rev0/mingw64/x86_64-w64-mingw32/include/c++/iostream:39:0,
+                 from ..\hello.cpp:8:
+C:/Program Files/mingw-w64/x86_64-5.4.0-posix-seh-rt_v5-rev0/mingw64/x86_64-w64-mingw32/include/c++/ostream:590:5: note:   'std::endl'
+     endl(basic_ostream<_CharT, _Traits>& __os)
+     ^
+
+16:45:49 Build Finished (took 641ms)
+

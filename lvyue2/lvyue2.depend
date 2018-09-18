@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1520664601 source:d:\project\lvyue2\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<cstring>
+	<algorithm>
+	<vector>
+	<string>
+
+1520056680 source:d:\project\lvyue2\src\filedeal.cpp
+	"filedeal.h"
+
+1520055558 d:\project\lvyue2\include\filedeal.h
+	<string.h>
+	<string>
+	<stdio.h>
+	<iostream>
+

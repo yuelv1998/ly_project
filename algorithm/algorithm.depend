@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1519548102 source:d:\project\algorithm\basesort.cpp
+
+1520053009 source:d:\project\algorithm\main.cpp
+	<iostream>
+	<numeric>
+	<iterator>
+	"obj/filedeal.h"
+	<String>
+	<string.h>
+	<stdio.h>
+
+1520053054 d:\project\algorithm\obj\filedeal.h
+	<stdio.h>
+	<string>
+	<string.h>
+	<iostream>
+	<map>
+
+1520052242 source:d:\project\algorithm\obj\filedeal.cpp
+	"filedeal.h"
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1519975049 d:\project\algorithm\include\string.h
+

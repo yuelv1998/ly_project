@@ -1,0 +1,17 @@
+#pragma once
+#include <sys/type.h>
+enum IPCMODE
+{
+    IR = S_IRUSR
+   ,IW = S_IWUSR
+   ,GR = S_IRGRP
+   ,GW = S_IWGRP
+   ,OR = S_IROTH
+   ,OW = S_IWOTH
+
+}
+
+
+
+
+

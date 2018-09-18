@@ -1,0 +1,71 @@
+//============================================================================
+// Name        : lvyue3.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include<algorithm>
+#include<map>
+#include<iterator>
+#include<string>
+#include <vector>
+#include<bitset>
+using namespace std;
+/*
+void fun(int &a)
+{
+   a = a * a;
+}
+*/
+
+/**
+ * merger(arr, lo, mid, hi)
+ *
+ * */
+void sort_gui1(int *arr, int length)
+{
+    int arr_bk[length];
+    for(int between = 1; between < length/2; between = between + between)
+    {
+
+    }
+}
+int main() {
+
+
+	/*
+    enum color{red, blue, yellow, write, end};
+    bitset<end> colors;
+    colors.set(red);
+    colors.set(blue);
+    cout << colors<<endl;
+    cout << colors.count() <<endl;
+    cout << ~colors <<endl;
+    */
+	/*
+	vector<int>  vec;
+	for(int i = 0; i < 9; i++)
+	{
+		vec.push_back(i);
+	}
+
+	for_each(vec.begin(), vec.end(), fun);
+	copy( vec.begin(), vec.end(), ostream_iterator<int>(cout, " "));
+    */
+
+
+	/*
+	map<int , string> map1;
+    map1[1] = "lvyue1";
+    map1[2] = "jiemian";
+    map<int, string>::reverse_iterator iter = map1.rbegin();
+    cout << iter->second <<endl;
+    map<int, string>::mapped_type a = map1[1];
+    cout << a << endl;
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	*/
+	return 0;
+}

@@ -1,0 +1,32 @@
+/*
+ * VFIFO.cpp
+ *
+ *  Created on: 2018Äê6ÔÂ2ÈÕ
+ *      Author: lvyue
+ */
+
+#include "VFIFO.h"
+
+VFIFO::VFIFO( ):mode(IR|IW) {
+	// TODO Auto-generated constructor stub
+
+}
+
+VFIFO::VFIFO( enum IPCMODE a ):mode(a) {
+	// TODO Auto-generated constructor stub
+
+}
+VFIFO::~VFIFO() {
+	// TODO Auto-generated destructor stub
+}
+int VFIFO::GenerateFIFO(string pathname)
+{
+	int ren =  mkfifo(pathname.c_str(), mode);
+	if (EEXIST == ren)
+	{
+		mylog("already exist the fifo!");
+
+	}
+	return ren;
+}
+
